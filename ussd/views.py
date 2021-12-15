@@ -40,7 +40,7 @@ def ussdApp(request):
             response += "2.check your Account balance \n"
         elif text == '1*1':
             banking="details"
-            response = "CON insert amount "+str(banking)+"\n"
+            response = "CON enter your PIN number "+str(banking)+"\n"
         elif category =='1*1' and int(len(level)) == 3 and str(level[2]) in  str(level):
         #     response = "CON other details \n"
         # elif category =='1*1' and int(len(level)) == 4 and str(level[3]) in  str(level):
