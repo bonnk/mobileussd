@@ -31,7 +31,7 @@ def ussdApp(request):
             response =  "CON choose the service you need \n"
             response += "1. Check account details \n"
             response += "2. Check phone number\n"
-            response += "3.receive message to \n "
+            response += "3.receive a message about your account transactions \n "
             
         elif text == '1':
 
@@ -42,8 +42,8 @@ def ussdApp(request):
             banking="details"
             response = "CON insert amount "+str(banking)+"\n"
         elif category =='1*1' and int(len(level)) == 3 and str(level[2]) in  str(level):
-            response = "CON other details \n"
-        elif category =='1*1' and int(len(level)) == 4 and str(level[3]) in  str(level):
+        #     response = "CON other details \n"
+        # elif category =='1*1' and int(len(level)) == 4 and str(level[3]) in  str(level):
         #     response = "CON insert your random num \n"
         # elif category =='1*1' and int(len(level)) == 5 and str(level[4]) in  str(level):
          # save the data into databases
@@ -63,7 +63,7 @@ def ussdApp(request):
 
           insert.save()
 
-          response = "END thank you for using this \n"
+          response = "END thank you for using this service\n"
           
 
         elif text == '1*2':
