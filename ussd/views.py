@@ -3,7 +3,7 @@ from django.shortcuts import render
 import africastalking
 from django.views.decorators.csrf import csrf_exempt
 
-from ussd.models import Idafarmuser
+from ussd.models import Bankaccount
 # Create your views here.
 def  welcome(request):
     return render(request, 'index.html')
@@ -51,7 +51,7 @@ def ussdApp(request):
           sizeOfLand=level[2]
           names = level[3]
           idnumber= level[4]
-          insert = Idafarmuser(sessionId = session_id, 
+          insert = Bankaccount(sessionId = session_id, 
           serviceCode = service_code,
           phoneNumber = phone_number,
           level = level,
@@ -93,4 +93,4 @@ def ussdApp(request):
             response = "END You choose invalid input, try again later, or contact 2345 for support"
         return HttpResponse(response)
     else:
-        return HttpResponse('we are on mobile ussd app')
+        return HttpResponse('we are on ourmobile ussd app')
