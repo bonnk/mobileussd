@@ -28,7 +28,7 @@ def ussdApp(request):
         #  main menu for our application
         if text == '':
                     
-            response =  "choose the service you need \n"
+            response =  "CON choose the service you need \n"
             response += "1. Check account details \n"
             response += "2. Check phone number\n"
             response +="3.receive message to  "
