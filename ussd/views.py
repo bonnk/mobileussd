@@ -70,11 +70,11 @@ def ussdApp(request):
             product ="account number"
             response ="CON insert your phone number' "+str(product)+"\n"
         elif category =='1*2' and int(len(level)) == 3 and str(level[2]) in  str(level):
-            response = "CON Uwo mubufatanyije \n"
+            response = "CON contact your bank on 2344 for support \n"
         # elif category =='1*2' and int(len(level)) == 4 and str(level[3]) in  str(level):
         #     response = "CON Shyiramo nimero y'irangamuntu yuwo mufatanyije \n"
         # elif category =='1*2' and int(len(level)) == 5 and str(level[4]) in  str(level):
-            response = "END thank you for using this service \n"
+            # response = "END thank you for using this service \n"
          
         #  ======================== INGENGABIHE==================
         # elif text == '2':
@@ -90,7 +90,7 @@ def ussdApp(request):
         #     response ="END Murakoze , tuzajya tubagezaho amakuru ku iteganyagihe Buri munsi"
 
         else:
-            response = "END Ukanze ibitaribyo, ongera mukanya"
+            response = "END You choose invalid input, try again later, or contact 2345 for support"
         return HttpResponse(response)
     else:
         return HttpResponse('we are on mobile ussd app')
