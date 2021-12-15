@@ -31,13 +31,13 @@ def ussdApp(request):
             response =  "CON choose the service you need \n"
             response += "1. Check account details \n"
             response += "2. Check phone number\n"
-            response +="3.receive message to  "
+            response += "3.receive message to \n "
             
         elif text == '1':
 
             response = "CON choose the details you want  \n"
-            response += "1. check your Account number"
-            response += "2.check your Account balance"
+            response += "1. check your Account number \n"
+            response += "2.check your Account balance \n"
         elif text == '1*1':
             banking="details"
             response = "CON insert amount' "+str(banking)+"\n"
