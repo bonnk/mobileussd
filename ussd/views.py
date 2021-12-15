@@ -36,8 +36,8 @@ def ussdApp(request):
         elif text == '1':
 
             response = "CON choose the details you want  \n"
-            response += "1. check your Account number \n"
-            response += "2.check your Account balance \n"
+            response += "1. about your Account transactions \n"
+            response += "2.about your  balance \n"
         elif text == '1*1':
             banking="details"
             response = "CON enter your PIN number "+str(banking)+"\n"
